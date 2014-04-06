@@ -2,6 +2,7 @@ module Lostag
   module Commands
     module Errors
       class Log
+        include Interactor
         def setup
           @payload = {
             to: "greg2502@gmail.com",
