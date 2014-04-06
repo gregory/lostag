@@ -8,9 +8,11 @@ module Lostag
           founder_email = Mail::Address.new(context[:to]).address
           founder_uuid = founder_email[/founder\+([0-9a-z|-]+)@mails\.lostag\.com/,1]
           founder_tag = Lostag::Data::Tag.find_by(uuid: founder_uuid)
+          Errors::Log.perform(body: context) unless owner_tag.present?
 
           owner_email = Mail::Address.new(context[:from]).address
           owner_tag = Lostag::Data::Tag.where(email: owner_email).first
+          Errors::Log.perform(body: context) unless owner_tag.present?
 
           @payload = {
             to: founder_tag.email,

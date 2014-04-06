@@ -5,6 +5,7 @@ module Lostag
       desc 'forward the message in to the right person'
       post do
         mail = Mail::Address.new(params[:to]).address
+        binding.pry
         if mail.match(/\Afounder\+/)
           Commands::Founder::Forward.perform(params)
         else
