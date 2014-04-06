@@ -5,7 +5,7 @@ module Lostag
         include Interactor
 
         def perform
-          tag = Lostag::Data::Tag.find_by(email: context[:email])
+          tag = Lostag::Data::Tag.where(email: context[:email]).first
 
           context[:tag] = tag || Create.perform
         end

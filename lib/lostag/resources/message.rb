@@ -1,13 +1,14 @@
 module Lostag
   module Resources
-    class Message < Grape::API
-      desc 'show a form from a qrcode'
+    class MessageOut < Grape::API
+      desc 'send a mail to the owner of an object'
       params do
-        requires :uuid, type: Integer, desc: 'the id of the qrcode'
+        requires :uuid, type: String, desc: 'the id of the qrcode'
         requires :message, type: String, desc: 'the message'
       end
       post ':uuid' do
-        {uuid: params[:uuid]}
+        Commands::Founder::Send.perform(uuid: params[:uuid], message: params[:message])
+        {status: 'ok'}
       end
     end
   end

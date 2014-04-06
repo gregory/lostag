@@ -5,6 +5,7 @@ module Lostag
 
       field :email
       field :uuid
+      field :conversations, type: Hash #{uuid: email}
     end
   end
 end

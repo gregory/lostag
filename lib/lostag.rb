@@ -42,8 +42,19 @@ module Lostag
         Rack::Response.new({ message: e.message }.to_json, 412, RACK_CONTENT_TYPE_HEADER).finish
       end
 
+      rescue_from Mongoid::Errors::DocumentNotFound do |e|
+        Rack::Response.new({ message: "Sounds like we were not able to find the document, please try again" }.to_json, 404, RACK_CONTENT_TYPE_HEADER).finish
+      end
+
+      rescue_from Exception do |e|
+        Rack::Response.new({ message: "Something really bad happened, please contact someone!!" }.to_json, 500, RACK_CONTENT_TYPE_HEADER).finish
+      end
+
       version Lostag::Resources::VERSION, using: :param, parameter: 'version'
-      mount Message => '/messages'
+
+      mount Tag => '/tags'
+      mount MessageIn => '/messages/in'
+      mount MessageOut => '/messages/out'
 
       #add_swagger_documentation mount_path: '/doc'
     end
