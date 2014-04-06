@@ -7,7 +7,7 @@ module Lostag
       end
       post do
         result = Commands::Tag::Create.perform(email: params[:email])
-        {uuid: result.context[:tag].uuid}
+        { uuid: result.context[:tag].uuid }
       end
     end
   end
