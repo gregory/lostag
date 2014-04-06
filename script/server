@@ -1,0 +1,5 @@
+#!/bin/bash
+# Boot server with development environment by default
+# you can change the environment with: script/server staging
+#bundle exec -- rackup -s thin -E ${1-development}
+bundle exec -- rerun 'rackup -s Puma' -c --signal KILL

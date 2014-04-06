@@ -1,0 +1,288 @@
+# Logfile created on 2014-03-30 01:36:33 -0700 by logger.rb/31641
+Request: GET /transactions/topup/status ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "COOKIE: __uvt=; remember_token=zteSVXLqbsdXif5ab35ndA", "HOST: localhost:5000", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"15"}
+Response:
+{"status":"ok"}
+127.0.0.1 - - [30/Mar/2014 01:36:39] "GET /transactions/topup/status HTTP/1.1" 200 15 0.1747
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"1728000", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [30/Mar/2014 01:37:14] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0006
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103lAm2alcAunfCm2nG37UjY","livemode":false,"created":1396168634,"used":false,"object":"token","type":"card","card":{"id":"card_103lAm2alcAunfCm5PcV49mD","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"66", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"1728000", "Access-Control-Allow-Credentials"=>"true", "Vary"=>"Origin"}
+Response:
+{"phone":"4153618279","credit":{"amount":172.61,"currency":"usd"}}
+127.0.0.1 - - [30/Mar/2014 01:37:18] "POST /transactions/topup/4153618279 HTTP/1.1" 201 66 3.6875
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"1728000", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [01/Apr/2014 06:55:18] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0012
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103m0M2alcAunfCmejyDzKnX","livemode":false,"created":1396360518,"used":false,"object":"token","type":"card","card":{"id":"card_103m0M2alcAunfCmmVIt7jGl","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"64", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"1728000", "Access-Control-Allow-Credentials"=>"true", "Vary"=>"Origin"}
+Response:
+{"phone":"4153618279","credit":{"amount":11.1,"currency":"usd"}}
+127.0.0.1 - - [01/Apr/2014 06:55:22] "POST /transactions/topup/4153618279 HTTP/1.1" 201 64 4.0728
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 204
+Headers: {"Allow"=>"OPTIONS, POST"}
+Response:
+127.0.0.1 - - [01/Apr/2014 09:23:13] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 204 - 0.1694
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"1728000", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [01/Apr/2014 09:24:23] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0006
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"error":{"code":"abort","type":"abort","message":"An unexpected error has occurred submitting your credit\ncard to our secure credit card processor. This may be\ndue to network connectivity issues, so you should try\nagain (you won't be charged twice). If this problem\npersists, please let us know!"}},"type":"topup","id":"4153618279"}
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"error":{"code":"abort","type":"abort","message":"An unexpected error has occurred submitting your credit\ncard to our secure credit card processor. This may be\ndue to network connectivity issues, so you should try\nagain (you won't be charged twice). If this problem\npersists, please let us know!"}},"type":"topup","id":"4153618279"}
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"error":{"code":"abort","type":"abort","message":"An unexpected error has occurred submitting your credit\ncard to our secure credit card processor. This may be\ndue to network connectivity issues, so you should try\nagain (you won't be charged twice). If this problem\npersists, please let us know!"}},"type":"topup","id":"4153618279"}
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"error":{"code":"abort","type":"abort","message":"An unexpected error has occurred submitting your credit\ncard to our secure credit card processor. This may be\ndue to network connectivity issues, so you should try\nagain (you won't be charged twice). If this problem\npersists, please let us know!"}},"type":"topup","id":"4153618279"}
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"1728000", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [01/Apr/2014 09:35:19] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0007
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"error":{"code":"abort","type":"abort","message":"An unexpected error has occurred submitting your credit\ncard to our secure credit card processor. This may be\ndue to network connectivity issues, so you should try\nagain (you won't be charged twice). If this problem\npersists, please let us know!"}},"type":"topup","id":"4153618279"}
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"15", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 22:41:58] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0009
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mcr2alcAunfCmwfcsTMrK","livemode":false,"created":1396503717,"used":false,"object":"token","type":"card","card":{"id":"card_103mcr2alcAunfCmGECa1Fpe","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"64", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"15", "Vary"=>"Origin"}
+Response:
+{"phone":"4153618279","credit":{"amount":21.2,"currency":"usd"}}
+127.0.0.1 - - [02/Apr/2014 22:42:01] "POST /transactions/topup/4153618279 HTTP/1.1" 201 64 3.5824
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: no-cache", "CONNECTION: keep-alive", "COOKIE: __uvt=; remember_token=zteSVXLqbsdXif5ab35ndA", "HOST: localhost:5000", "ORIGIN: chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 204
+Headers: {"Allow"=>"OPTIONS, POST", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:43:15] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 204 - 0.0957
+Request: OPTIONS / ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: no-cache", "CONNECTION: keep-alive", "COOKIE: __uvt=; remember_token=zteSVXLqbsdXif5ab35ndA", "HOST: localhost:5000", "ORIGIN: chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50"}
+Response:
+Not Found
+127.0.0.1 - - [02/Apr/2014 23:43:30] "OPTIONS / HTTP/1.1" 404 - 0.0011
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: no-cache", "CONNECTION: keep-alive", "COOKIE: __uvt=; remember_token=zteSVXLqbsdXif5ab35ndA", "HOST: localhost:5000", "ORIGIN: chrome-extension://fdmmgilgnpjigdojojpjoooidkmcomcm", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 204
+Headers: {"Allow"=>"OPTIONS, POST", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:44:25] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 204 - 0.0922
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:45:07] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0006
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:45:22] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0005
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:47:14] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0010
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:49:35] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0005
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:50:37] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0008
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:51:00] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0005
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [02/Apr/2014 23:51:13] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0010
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [03/Apr/2014 00:03:01] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0007
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 204
+Headers: {"Allow"=>"OPTIONS, POST"}
+Response:
+127.0.0.1 - - [03/Apr/2014 00:05:18] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 204 - 0.0903
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 204
+Headers: {"Allow"=>"OPTIONS, POST"}
+Response:
+127.0.0.1 - - [03/Apr/2014 00:05:25] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 204 - 0.0733
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [03/Apr/2014 00:06:38] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0005
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [03/Apr/2014 09:52:43] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0027
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mng2alcAunfCmereZKthW","livemode":false,"created":1396543962,"used":false,"object":"token","type":"card","card":{"id":"card_103mng2alcAunfCm6uqCl6Bu","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"64", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Vary"=>"Origin"}
+Response:
+{"phone":"4153618279","credit":{"amount":31.3,"currency":"usd"}}
+127.0.0.1 - - [03/Apr/2014 09:52:46] "POST /transactions/topup/4153618279 HTTP/1.1" 201 64 2.9315
+Request: OPTIONS /transactions/topup/4153618279 ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "ACCESS_CONTROL_REQUEST_HEADERS: accept, content-type", "ACCESS_CONTROL_REQUEST_METHOD: POST", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"text/plain", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Access-Control-Allow-Headers"=>"accept, content-type"}
+Response:
+127.0.0.1 - - [03/Apr/2014 10:03:21] "OPTIONS /transactions/topup/4153618279 HTTP/1.1" 200 - 0.0007
+Request: POST /transactions/topup/4153618279 ["ACCEPT: application/json, text/plain, */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "REFERER: http://localhost:4567/", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mnr2alcAunfCmWdBB7tX3","livemode":false,"created":1396544600,"used":false,"object":"token","type":"card","card":{"id":"card_103mnr2alcAunfCmHE6DOa0h","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"64", "Access-Control-Allow-Origin"=>"http://localhost:4567", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50", "Access-Control-Allow-Credentials"=>"true", "Vary"=>"Origin"}
+Response:
+{"phone":"4153618279","credit":{"amount":41.4,"currency":"usd"}}
+127.0.0.1 - - [03/Apr/2014 10:03:23] "POST /transactions/topup/4153618279 HTTP/1.1" 201 64 2.8104
+Request: GET / ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [03/Apr/2014 23:03:15] "GET / HTTP/1.1" 404 - 0.0741
+Request: GET /favicon.ico ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [03/Apr/2014 23:03:15] "GET /favicon.ico HTTP/1.1" 404 - 0.0006
+Request: POST /transactions/topup/4153618279.json ["ACCEPT: application/json, text/plain, */*", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mzy2alcAunfCm1qsqwsBD","livemode":false,"created":1396589666,"used":false,"object":"token","type":"card","card":{"id":"card_103mzy2alcAunfCmmaKhUpj1","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"64", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50"}
+Response:
+{"phone":"4153618279","credit":{"amount":51.5,"currency":"usd"}}
+127.0.0.1 - - [03/Apr/2014 23:22:50] "POST /transactions/topup/4153618279.json HTTP/1.1" 201 64 2.9146
+Request: POST /transactions/topup/4153618279.json ["ACCEPT: application/json, text/plain, */*", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mzy2alcAunfCm1qsqwsBD","livemode":false,"created":1396589666,"used":false,"object":"token","type":"card","card":{"id":"card_103mzy2alcAunfCmmaKhUpj1","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Request: POST /transactions/topup/4153618279.json ["ACCEPT: application/json, text/plain, */*", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mzy2alcAunfCm1qsqwsBD","livemode":false,"created":1396589666,"used":false,"object":"token","type":"card","card":{"id":"card_103mzy2alcAunfCmmaKhUpj1","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Request: POST /transactions/topup/4153618279.json ["ACCEPT: application/json, text/plain, */*", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mzy2alcAunfCm1qsqwsBD","livemode":false,"created":1396589666,"used":false,"object":"token","type":"card","card":{"id":"card_103mzy2alcAunfCmmaKhUpj1","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Request: POST /transactions/topup/4153618279.json ["ACCEPT: application/json, text/plain, */*", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mzy2alcAunfCm1qsqwsBD","livemode":false,"created":1396589666,"used":false,"object":"token","type":"card","card":{"id":"card_103mzy2alcAunfCmmaKhUpj1","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"66", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50"}
+Response:
+{"phone":"4153618279","credit":{"amount":"10.1","currency":"usd"}}
+127.0.0.1 - - [03/Apr/2014 23:30:46] "POST /transactions/topup/4153618279.json HTTP/1.1" 201 66 0.1047
+Request: GET / ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:10:26] "GET / HTTP/1.1" 404 - 0.1394
+Request: GET /favicon.ico ["ACCEPT: */*", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:10:27] "GET /favicon.ico HTTP/1.1" 404 - 0.0011
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"15"}
+Response:
+{"status":"ok"}
+127.0.0.1 - - [05/Apr/2014 20:19:12] "GET /1 HTTP/1.1" 200 15 0.1115
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:21:16] "GET /1 HTTP/1.1" 404 - 0.0561
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:21:17] "GET /1 HTTP/1.1" 404 - 0.0006
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:21:17] "GET /1 HTTP/1.1" 404 - 0.0010
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:21:24] "GET /1 HTTP/1.1" 404 - 0.0013
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:21:25] "GET /1 HTTP/1.1" 404 - 0.0218
+Request: GET /1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"12"}
+Response:
+{"status":1}
+127.0.0.1 - - [05/Apr/2014 20:21:48] "GET /1 HTTP/1.1" 200 12 0.1264
+Request: GET /20 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"13"}
+Response:
+{"status":20}
+127.0.0.1 - - [05/Apr/2014 20:21:53] "GET /20 HTTP/1.1" 200 13 0.0016
+Request: GET / ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:22:03] "GET / HTTP/1.1" 404 - 0.0554
+Request: GET / ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:22:04] "GET / HTTP/1.1" 404 - 0.0006
+Request: GET /messages ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:22:47] "GET /messages HTTP/1.1" 404 - 0.0632
+Request: GET /messages ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:22:53] "GET /messages HTTP/1.1" 404 - 0.0006
+Request: GET /messages ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CACHE_CONTROL: max-age=0", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 404
+Headers: {"Content-Type"=>"text/html", "X-Cascade"=>"pass"}
+Response:
+Not Found
+127.0.0.1 - - [05/Apr/2014 20:22:54] "GET /messages HTTP/1.1" 404 - 0.0008
+Request: GET /messages/1 ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:9292", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"12"}
+Response:
+{"status":1}
+127.0.0.1 - - [05/Apr/2014 20:22:57] "GET /messages/1 HTTP/1.1" 200 12 0.0595
+Request: POST /messages/123 ["ACCEPT: */*", "HOST: localhost:9292", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"message": "thanks"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"12"}
+Response:
+{"uuid":123}
+127.0.0.1 - - [05/Apr/2014 20:44:10] "POST /messages/123 HTTP/1.1" 201 12 0.1298
+Request: POST /messages/123 ["ACCEPT: */*", "HOST: localhost:9292", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"message": "thanks"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"12"}
+Response:
+{"uuid":123}
+127.0.0.1 - - [05/Apr/2014 20:44:21] "POST /messages/123 HTTP/1.1" 201 12 0.0025

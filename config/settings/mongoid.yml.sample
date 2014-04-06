@@ -1,0 +1,16 @@
+development:
+  sessions:
+    default:
+      database: jm_dev
+      hosts:
+        - localhost:27017
+      options:
+        consistency: strong
+test:
+  sessions:
+    default:
+      database: jm_test
+      hosts:
+        - localhost:27017
+      options:
+        consistency: strong

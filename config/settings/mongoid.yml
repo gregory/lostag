@@ -1,0 +1,8 @@
+development:
+  sessions:
+    default:
+      database: lostag
+      hosts:
+        - localhost:27017
+      options:
+        consistency: strong

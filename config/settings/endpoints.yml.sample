@@ -1,0 +1,4 @@
+defaults: &defaults
+  host: "http://localhost:9292"
+development:
+  <<: *defaults

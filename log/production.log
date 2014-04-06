@@ -1,0 +1,13 @@
+# Logfile created on 2014-04-03 23:36:19 -0700 by logger.rb/31641
+Request: GET /transactions/topup/status ["ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8", "ACCEPT_ENCODING: gzip,deflate,sdch", "ACCEPT_LANGUAGE: en-US,en;q=0.8", "CONNECTION: keep-alive", "HOST: localhost:5000", "USER_AGENT: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/33.0.1750.152 Safari/537.36", "VERSION: HTTP/1.1"] 
+Response: 200
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"15"}
+Response:
+{"status":"ok"}
+127.0.0.1 - - [03/Apr/2014 23:36:33] "GET /transactions/topup/status HTTP/1.1" 200 15 0.1025
+Request: POST /transactions/topup/4153618279.json ["ACCEPT: application/json, text/plain, */*", "HOST: localhost:5000", "ORIGIN: http://localhost:4567", "USER_AGENT: curl/7.30.0", "VERSION: HTTP/1.1"] {"credit":{"amount":10.1,"currency":"usd"},"phone":"4153618279","card_trace":{"id":"tok_103mzy2alcAunfCm1qsqwsBD","livemode":false,"created":1396589666,"used":false,"object":"token","type":"card","card":{"id":"card_103mzy2alcAunfCmmaKhUpj1","object":"card","last4":"4242","type":"Visa","exp_month":6,"exp_year":2015,"fingerprint":"XcXRs29PmigIAXls","customer":null,"country":"US","name":null,"address_line1":null,"address_line2":null,"address_city":null,"address_state":null,"address_zip":null,"address_country":null}},"type":"topup","id":"4153618279"}
+Response: 201
+Headers: {"Content-Type"=>"application/json", "Content-Length"=>"66", "Access-Control-Allow-Origin"=>"*", "Access-Control-Allow-Methods"=>"OPTIONS, POST, GET", "Access-Control-Expose-Headers"=>"", "Access-Control-Max-Age"=>"50"}
+Response:
+{"phone":"4153618279","credit":{"amount":"10.1","currency":"usd"}}
+127.0.0.1 - - [03/Apr/2014 23:36:46] "POST /transactions/topup/4153618279.json HTTP/1.1" 201 66 0.6037
