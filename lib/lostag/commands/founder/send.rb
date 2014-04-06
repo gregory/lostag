@@ -9,8 +9,8 @@ module Lostag
           @founder_tag = Commands::Tag::FindOrCreateByEmail.perform(email: context[:email]).context[:tag]
           @payload = {
             to: @owner_tag.email,
-            from: "supahero@lostag.gregory.io",
-            reply_to: "founder+#{@founder_tag.uuid}@lostag.gregory.io",
+            from: "supahero@mails.lostag.com",
+            reply_to: "founder+#{@founder_tag.uuid}@mails.lostag.com",
             subject: "Youpie, someone has just recovered something from you!",
             body: context[:body]
           }

@@ -15,8 +15,8 @@ module Lostag
 
           @payload = {
             to: owner_tag.email,
-            reply_to: "founder+#{founder_tag.uuid}@lostag.gregory.io",
-            from: "supahero@lostag.gregory.io",
+            reply_to: "founder+#{founder_tag.uuid}@mails.lostag.com",
+            from: "supahero@mails.lostag.com",
             subject: context['subject'],
             body: context['text'],
           }
