@@ -7,7 +7,7 @@ module Lostag
         def perform
           tag = Lostag::Data::Tag.where(email: context[:email]).first
 
-          context[:tag] = tag || Create.perform
+          context[:tag] = tag.present? ? tag : Create.perform(email: context[:email]).context[:tag]
         end
       end
     end

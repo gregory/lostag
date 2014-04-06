@@ -5,11 +5,12 @@ module Lostag
         include Interactor
 
         def setup
-          context[:tag] = Lostag::Data::Tag.find_by(uuid: context[:uuid])
+          @owner_tag = Lostag::Data::Tag.find_by(uuid: context[:uuid])
+          @founder_tag = Commands::Tag::FindOrCreateByEmail.perform(email: context[:email])
           @payload = {
-            to: context[:tag].email,
+            to: @owner_tag.email,
             from: "supahero@lostag.gregory.io",
-            reply_to: "founder+#{context[:uuid]}@lostag.gregory.io",
+            reply_to: "founder+#{@founder_tag.context[:uuid]}@lostag.gregory.io",
             subject: "Youpie, someone has just recovered something from you!",
             body: context[:message]
           }
