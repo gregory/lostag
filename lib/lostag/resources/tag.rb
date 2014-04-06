@@ -7,7 +7,7 @@ module Lostag
       end
       post do
         result = Commands::Tag::FindOrCreateByEmail.perform(email: params[:email])
-        { uuid: result.context[:tag].uuid }
+        { email: result.context[:tag].email,  uuid: result.context[:tag].uuid }
       end
     end
   end

@@ -12,7 +12,7 @@ module Lostag
             from: "supahero@lostag.gregory.io",
             reply_to: "founder+#{@founder_tag.uuid}@lostag.gregory.io",
             subject: "Youpie, someone has just recovered something from you!",
-            body: context[:message]
+            body: context[:body]
           }
         end
 
