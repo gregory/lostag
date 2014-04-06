@@ -7,7 +7,7 @@ module Lostag
 
         def setup
           owner_email = Mail::Address.new(context[:to]).address
-          owner_uuid = owner_email[/owner\+([0-9a-z|-]+)@lostag\.gregory\.io/,1]
+          owner_uuid = owner_email[/owner\+([0-9a-z|-]+)@mails\.lostag\.com/,1]
           owner_tag = Lostag::Data::Tag.where(uuid: owner_uuid).first
 
           founder_email = Mail::Address.new(context[:from]).address
