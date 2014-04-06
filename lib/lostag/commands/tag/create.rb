@@ -11,6 +11,14 @@ module Lostag
 
         def perform
           context[:tag] = Lostag::Data::Tag.create(uuid: context[:uuid], email: context[:email])
+
+          payload = {
+            to: context[:tag].email,
+            from: "no-reply@mails.lostag.com",
+            subject: "We've just generate a qrcode for you to stick it on your stuffs",
+            body: "You can find it on this link: http://www.lostag.com/#/tag/#{context[:tag].uuid}",
+          }
+          context[:mail_response] = Pony.mail(payload)
         end
       end
     end
