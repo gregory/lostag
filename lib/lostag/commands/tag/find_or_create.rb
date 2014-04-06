@@ -1,13 +1,18 @@
+require 'mail'
 module Lostag
   module Commands
     module Tag
       class FindOrCreateByEmail
         include Interactor
 
-        def perform
-          tag = Lostag::Data::Tag.where(email: context[:email]).first
+        def setup
+          @email = Mail::Address.new(context[:email]).address
+        end
 
-          context[:tag] = tag.present? ? tag : Create.perform(email: context[:email]).context[:tag]
+        def perform
+          tag = Lostag::Data::Tag.where(email: @email).first
+
+          context[:tag] = tag.present? ? tag : Create.perform(email: @email).context[:tag]
         end
       end
     end

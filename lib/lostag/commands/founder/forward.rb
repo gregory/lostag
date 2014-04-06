@@ -5,10 +5,11 @@ module Lostag
         include Interactor
 
         def setup
-          founder_uuid = context[:to][/founder\+([0-9a-z|-]+)@lostag\.gregory\.io/,1]
+          founder_email = Mail::Address.new(context[:to]).address
+          founder_uuid = founder_email[/founder\+([0-9a-z|-]+)@lostag\.gregory\.io/,1]
           founder_tag = Lostag::Data::Tag.where(uuid: founder_uuid).first
 
-          owner_email = context[:from][/\<(.*)\>\z/, 1]
+          owner_email = Mail::Address.new(context[:from]).address
           owner_tag = Lostag::Data::Tag.where(email: owner_email).first
 
           @payload = {

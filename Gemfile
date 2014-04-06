@@ -8,6 +8,7 @@ gem 'mongoid', '~> 3.1.6'
 gem 'bson_ext'
 gem 'rack-cors', "~> 0.2.9"
 gem 'settingslogic'
+gem 'mail'
 gem 'pry'
 
 group :test do

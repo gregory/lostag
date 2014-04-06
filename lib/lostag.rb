@@ -46,6 +46,10 @@ module Lostag
         Rack::Response.new({ message: "Sounds like we were not able to find the document, please try again" }.to_json, 404, RACK_CONTENT_TYPE_HEADER).finish
       end
 
+      rescue_from Mail::Field::ParseError do |e|
+        Rack::Response.new({ message: "Invalid email!!" }.to_json, 500, RACK_CONTENT_TYPE_HEADER).finish
+      end
+
       rescue_from Exception do |e|
         Rack::Response.new({ message: "Something really bad happened, please contact someone!!" }.to_json, 500, RACK_CONTENT_TYPE_HEADER).finish
       end

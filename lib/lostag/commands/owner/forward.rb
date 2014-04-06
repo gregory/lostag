@@ -1,3 +1,4 @@
+require 'mail'
 module Lostag
   module Commands
     module Owner
@@ -5,10 +6,11 @@ module Lostag
         include Interactor
 
         def setup
-          owner_uuid = context[:to][/owner\+([0-9a-z|-]+)@lostag\.gregory\.io/,1]
+          owner_email = Mail::Address.new(context[:to]).address
+          owner_uuid = owner_email[/owner\+([0-9a-z|-]+)@lostag\.gregory\.io/,1]
           owner_tag = Lostag::Data::Tag.where(uuid: owner_uuid).first
 
-          founder_email = context[:from][/\<(.*)\>\z/, 1]
+          founder_email = Mail::Address.new(context[:from]).address
           founder_tag = Lostag::Data::Tag.where(email: founder_email).first
 
           @payload = {

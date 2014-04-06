@@ -3,7 +3,7 @@ module Lostag
     class MessageIn < Grape::API
       desc 'forward the message in to the right person'
       post do
-        if params[:to].match(/founder/)
+        if params[:to].match(/\Afounder\+/)
           Commands::Founder::Forward.perform(params)
         else
           Commands::Owner::Forward.perform(params)
