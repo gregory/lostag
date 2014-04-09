@@ -8,7 +8,8 @@ module Lostag
         requires :body, type: String, desc: 'the message'
       end
       post ':uuid' do
-        Commands::Founder::Send.perform(uuid: params[:uuid], body: params[:body], email: params[:email])
+        owner_tag = Lostag::Data::Tag.find_by(uuid: params[:uuid])
+        Commands::Founder::InitiateConversation.perform(owner_tag: owner_tag, email: params[:email], body: params[:body])
         {status: 'ok'}
       end
     end

@@ -6,9 +6,9 @@ module Lostag
 
         def setup
           @payload = {
-            to: context[:tag].email,
+            to: context[:owner_tag].email,
             from: "supahero@mails.lostag.com",
-            reply_to: "founder+#{context[:owner_tag].uuid}@mails.lostag.com",
+            reply_to: "founder+#{context[:tag].uuid}@mails.lostag.com",
             subject: "Youpie, someone has just recovered something from you!",
             body: context[:body]
           }
