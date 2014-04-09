@@ -4,12 +4,7 @@ module Lostag
     class MessageIn < Grape::API
       desc 'forward the message in to the right person'
       post do
-        mail = Mail::Address.new(params[:to]).address
-        if mail.match(/\Afounder\+/)
-          Commands::Founder::Forward.perform(params)
-        else
-          Commands::Owner::Forward.perform(params)
-        end
+        result = Commands::Mails::Forwarding.perform(params)
         {status: 'ok'}
       end
     end
