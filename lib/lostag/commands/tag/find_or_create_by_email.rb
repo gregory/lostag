@@ -1,4 +1,3 @@
-require 'mail'
 module Lostag
   module Commands
     module Tag
@@ -6,7 +5,7 @@ module Lostag
         include Interactor
 
         def setup
-          @email = Mail::Address.new(context[:email]).address
+          @email = ::Mail::Address.new(context[:email]).address
         end
 
         def perform

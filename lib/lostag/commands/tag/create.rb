@@ -10,8 +10,10 @@ module Lostag
         end
 
         def perform
+          #TODO: handle email validation
           context[:tag] = Lostag::Data::Tag.create(uuid: context[:uuid], email: context[:email])
 
+          binding.pry
           payload = {
             to: context[:tag].email,
             from: "no-reply@mails.lostag.com",
