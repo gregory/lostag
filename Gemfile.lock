@@ -150,7 +150,7 @@ GEM
       json
     settingslogic (2.0.9)
     slop (3.5.0)
-    thread_safe (0.3.2)
+    thread_safe (0.3.3)
     timers (1.1.0)
     treetop (1.4.15)
       polyglot

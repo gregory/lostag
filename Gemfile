@@ -15,6 +15,7 @@ group :test do
   gem 'database_cleaner'
 end
 group :test, :development do
+  gem 'rspec'
   gem "pry"
   gem "pry-debugger"
   gem "pry-rescue"
